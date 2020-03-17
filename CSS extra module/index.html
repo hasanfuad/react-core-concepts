@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Extra</title>
+    <style>
+       h2::before{
+           content: "Adding Hello ";
+           background-color: lawngreen;
+           font-size: 15px;
+       }
+       li::after{
+           content: " Bye Bye.";
+           background-color: lightblue;
+           font-size: 10px;
+       }
+       body {
+  counter-reset: section;
+}
+
+p::before {
+  counter-increment: section;
+  content: "like " counter(section) ": ";
+}
+li::before{
+    content:"❤️";
+}
+       
+        
+    </style>
+</head>
+<body>
+    <p>hello</p>
+    <p>what's up</p>
+    <p class="Special">how are you?</p>
+    <p>hey</p>
+    <input type="name">
+    <input type="password">
+    <ul>
+        <li>Dhaka</li>
+        <li>Chittagong</li>
+        <li>Chengdu</li>
+        <li>Beijing</li>
+        <li>Shanghai</li>        
+
+    </ul>
+</body>
+</html>
